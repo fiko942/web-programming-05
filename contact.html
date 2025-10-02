@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body class="bg-white text-gray-800 antialiased">
-    <header class="bg-red-700 text-white shadow">
+  <!-- BEGIN HEADER -->
+  <header class="bg-red-700 text-white shadow">
       <div class="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="index.html" class="flex items-center gap-3">
           <img src="assets/logo.svg" alt="Golden Dragon Wok logo" class="h-12 w-12" />
@@ -30,15 +31,19 @@
           <button class="md:hidden" id="navToggle4" aria-label="Buka menu">☰</button>
         </div>
       </div>
-      <nav id="mobileNav4" class="md:hidden bg-red-600 text-white px-4 py-3 hidden">
+  <!-- BEGIN MOBILE NAV -->
+  <nav id="mobileNav4" class="md:hidden bg-red-600 text-white px-4 py-3 hidden">
         <a href="index.html" class="block py-2">Beranda</a>
         <a href="menu.html" class="block py-2">Menu</a>
         <a href="about.html" class="block py-2">Tentang Kami</a>
         <a href="contact.html" class="block py-2">Kontak</a>
       </nav>
+      <!-- END MOBILE NAV -->
     </header>
+    <!-- END HEADER -->
 
     <main>
+    <!-- BEGIN HERO -->
       <section class="h-56 bg-cover bg-center relative" style="background-image: url('assets/hero.jpg')">
         <div class="absolute inset-0 bg-red-900/40"></div>
         <div class="container mx-auto px-4 h-full flex items-center">
@@ -47,6 +52,7 @@
           </div>
         </div>
       </section>
+    <!-- END HERO -->
       <div class="container mx-auto px-4 py-12">
 
       <div class="grid lg:grid-cols-2 gap-8">
@@ -108,7 +114,8 @@
       <div id="reservasi" class="mt-8"></div>
     </main>
 
-    <footer class="bg-red-800 text-white mt-12">
+  <!-- BEGIN FOOTER -->
+  <footer class="bg-red-800 text-white mt-12">
       <div class="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
         <div>
           <img src="assets/logo.svg" alt="Golden Dragon Wok" class="h-12 mb-3" />
@@ -131,7 +138,8 @@
       <div class="bg-red-900 text-red-100 text-sm py-3">
         <div class="container mx-auto px-4 text-center">© 2025 Golden Dragon Wok — Malang, Jawa Timur</div>
       </div>
-    </footer>
+  </footer>
+  <!-- END FOOTER -->
 
     <script>
       const navToggle4 = document.getElementById('navToggle4');
