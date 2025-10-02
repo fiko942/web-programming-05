@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <circle cx="60" cy="60" r="58" fill="#B91C1C" stroke="#F59E0B" stroke-width="4" />
+  <path d="M30 70 C40 45, 80 45, 90 70 C80 65, 60 85, 40 80 C30 78, 28 74, 30 70 Z" fill="#F59E0B" />
+  <path d="M60 34 C64 40, 74 44, 78 50" stroke="#FFF8E1" stroke-width="3" fill="none" stroke-linecap="round" />
+  <text x="60" y="103" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#FFF8E1">Golden Dragon</text>
+</svg>
