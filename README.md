@@ -1,5 +1,7 @@
 # Golden Dragon Wok — Demo Modul 1
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Proyek statis: situs multi-halaman (Beranda, Menu, Tentang, Kontak) untuk restoran fiktif "Golden Dragon Wok".
 
 Ini dibuat sebagai tugas/demonstrasi untuk:

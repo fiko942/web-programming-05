@@ -1,0 +1,7 @@
+# Normalize text files
+* text=auto
+
+# Do not include heavy asset files in exported archives
+assets/* export-ignore
+*.psd export-ignore
+*.ai export-ignore
