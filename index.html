@@ -17,14 +17,14 @@
 <body class="bg-white text-gray-800 antialiased">
   <!-- BEGIN HEADER -->
   <!-- Header / Navigation: consistent across pages -->
-  <header class="bg-red-700 text-white shadow">
-    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3">
+  <header class="fixed top-0 left-0 right-0 bg-red-700 text-white shadow z-50">
+    <div class="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 md:gap-3">
         <!-- Inline SVG logo file used from assets/logo.svg -->
-        <img src="assets/logo.svg" alt="Golden Dragon Wok logo" class="h-12 w-12" />
+        <img src="assets/logo.svg" alt="Golden Dragon Wok logo" class="h-10 w-10 md:h-12 md:w-12" />
         <div>
-          <h1 class="font-bold text-xl">Golden Dragon Wok</h1>
-          <p class="text-sm">Keaslian masakan Tiongkok — Malang, Jatim</p>
+          <h1 class="font-bold text-lg md:text-xl">Golden Dragon Wok</h1>
+          <p class="text-sm hidden sm:block">Keaslian masakan Tiongkok — Malang, Jatim</p>
         </div>
       </a>
 
@@ -37,7 +37,7 @@
 
       <div class="flex items-center gap-3">
         <a href="contact.html#reservasi"
-          class="bg-gold-600 text-red-900 px-4 py-2 rounded font-semibold hover:opacity-90">Reservasi</a>
+          class="bg-gold-600 text-red-900 px-3 py-1 md:px-4 md:py-2 rounded font-semibold text-sm md:text-base hover:opacity-90">Reservasi</a>
         <button class="md:hidden" id="navToggle" aria-label="Buka menu">☰</button>
       </div>
     </div>
@@ -55,7 +55,7 @@
 
   <!-- BEGIN HERO -->
   <!-- Hero -->
-  <main>
+  <main class="pt-16 md:pt-20">
     <section class="relative">
       <!-- Background hero photo (interior). Using local SVG asset for faster load and consistent theme. -->
       <div class="h-96 md:h-[520px] bg-cover bg-center relative">

@@ -14,13 +14,13 @@
 
 <body class="bg-white text-gray-800 antialiased">
   <!-- BEGIN HEADER -->
-  <header class="bg-red-700 text-white shadow">
-    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3">
-        <img src="assets/logo.svg" alt="Golden Dragon Wok logo" class="h-12 w-12" />
+  <header class="fixed top-0 left-0 right-0 bg-red-700 text-white shadow z-50">
+    <div class="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 md:gap-3">
+        <img src="assets/logo.svg" alt="Golden Dragon Wok logo" class="h-10 w-10 md:h-12 md:w-12" />
         <div>
-          <h1 class="font-bold text-xl">Golden Dragon Wok</h1>
-          <p class="text-sm">Malang, Jawa Timur</p>
+          <h1 class="font-bold text-lg md:text-xl">Golden Dragon Wok</h1>
+          <p class="text-sm hidden sm:block">Malang, Jawa Timur</p>
         </div>
       </a>
 
@@ -33,7 +33,7 @@
 
       <div class="flex items-center gap-3">
         <a href="contact.html#reservasi"
-          class="bg-gold-600 text-red-900 px-4 py-2 rounded font-semibold hover:opacity-90">Reservasi</a>
+          class="bg-gold-600 text-red-900 px-3 py-1 md:px-4 md:py-2 rounded font-semibold text-sm md:text-base hover:opacity-90">Reservasi</a>
         <button class="md:hidden" id="navToggle3" aria-label="Buka menu">☰</button>
       </div>
     </div>
@@ -48,7 +48,7 @@
   </header>
   <!-- END HEADER -->
 
-  <main>
+  <main class="pt-16 md:pt-20">
     <!-- BEGIN HERO -->
     <section class="h-56 bg-cover bg-center relative" style="background-image: url('assets/hero.jpg')">
       <div class="absolute inset-0 bg-red-900/40"></div>
