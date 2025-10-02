@@ -1,158 +1,170 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Golden Dragon Wok — Beranda</title>
-    <!-- Tailwind CDN for quick styling; replace with a build step for production -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/styles.css" />
-  </head>
-  <body class="bg-white text-gray-800 antialiased">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Golden Dragon Wok — Beranda</title>
+  <!-- Tailwind CDN for quick styling; replace with a build step for production -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
   <!-- BEGIN HEADER -->
   <!-- Header / Navigation: consistent across pages -->
   <header class="bg-red-700 text-white shadow">
-      <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="index.html" class="flex items-center gap-3">
-          <!-- Inline SVG logo file used from assets/logo.svg -->
-          <img src="assets/logo.svg" alt="Golden Dragon Wok logo" class="h-12 w-12" />
-          <div>
-            <h1 class="font-bold text-xl">Golden Dragon Wok</h1>
-            <p class="text-sm">Keaslian masakan Tiongkok — Malang, Jatim</p>
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <!-- Inline SVG logo file used from assets/logo.svg -->
+        <img src="assets/logo.svg" alt="Golden Dragon Wok logo" class="h-12 w-12" />
+        <div>
+          <h1 class="font-bold text-xl">Golden Dragon Wok</h1>
+          <p class="text-sm">Keaslian masakan Tiongkok — Malang, Jatim</p>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation" class="hidden md:flex gap-6 items-center">
+        <a href="index.html" class="hover:underline">Beranda</a>
+        <a href="menu.html" class="hover:underline">Menu</a>
+        <a href="about.html" class="hover:underline">Tentang Kami</a>
+        <a href="contact.html" class="hover:underline">Kontak</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="contact.html#reservasi"
+          class="bg-gold-600 text-red-900 px-4 py-2 rounded font-semibold hover:opacity-90">Reservasi</a>
+        <button class="md:hidden" id="navToggle" aria-label="Buka menu">☰</button>
+      </div>
+    </div>
+    <!-- BEGIN MOBILE NAV -->
+    <!-- Mobile nav (hidden on md+) -->
+    <nav id="mobileNav" class="md:hidden bg-red-600 text-white px-4 py-3 hidden">
+      <a href="index.html" class="block py-2">Beranda</a>
+      <a href="menu.html" class="block py-2">Menu</a>
+      <a href="about.html" class="block py-2">Tentang Kami</a>
+      <a href="contact.html" class="block py-2">Kontak</a>
+    </nav>
+    <!-- END MOBILE NAV -->
+  </header>
+  <!-- END HEADER -->
+
+  <!-- BEGIN HERO -->
+  <!-- Hero -->
+  <main>
+    <section class="relative">
+      <!-- Background hero photo (interior). Using local SVG asset for faster load and consistent theme. -->
+      <div class="h-96 md:h-[520px] bg-cover bg-center relative">
+        <!-- Hero: external image (Unsplash). Query returns a high-quality interior photo matching "luxury chinese restaurant interior" -->
+        <img src="assets/hero.jpg" alt="Interior Golden Dragon Wok"
+          class="w-full h-full object-cover absolute inset-0" />
+        <div class="absolute inset-0 bg-red-900/40 backdrop-brightness-90"></div>
+        <div class="container mx-auto relative z-10 px-4 h-full flex items-center">
+          <div class="max-w-2xl text-white">
+            <span class="inline-block bg-gold-600 text-red-900 px-3 py-1 rounded-md font-semibold mb-3">Authentic
+              Chinese Cuisine</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold mt-4">Golden Dragon Wok</h2>
+            <p class="mt-4 text-lg md:text-xl">Menjaga keaslian rasa Tiongkok sejak lama — bahan segar, bumbu
+              tradisional, suasana hangat.</p>
+            <div class="mt-6 flex gap-3">
+              <a href="menu.html" class="bg-white text-red-800 px-4 py-2 rounded shadow font-semibold">Lihat Menu</a>
+              <a href="contact.html#reservasi"
+                class="border border-white text-white px-4 py-2 rounded font-semibold">Reservasi</a>
+            </div>
           </div>
-        </a>
-
-        <nav aria-label="Main navigation" class="hidden md:flex gap-6 items-center">
-          <a href="index.html" class="hover:underline">Beranda</a>
-          <a href="menu.html" class="hover:underline">Menu</a>
-          <a href="about.html" class="hover:underline">Tentang Kami</a>
-          <a href="contact.html" class="hover:underline">Kontak</a>
-        </nav>
-
-        <div class="flex items-center gap-3">
-          <a href="contact.html#reservasi" class="bg-gold-600 text-red-900 px-4 py-2 rounded font-semibold hover:opacity-90">Reservasi</a>
-          <button class="md:hidden" id="navToggle" aria-label="Buka menu">☰</button>
         </div>
       </div>
-  <!-- BEGIN MOBILE NAV -->
-  <!-- Mobile nav (hidden on md+) -->
-  <nav id="mobileNav" class="md:hidden bg-red-600 text-white px-4 py-3 hidden">
-        <a href="index.html" class="block py-2">Beranda</a>
-        <a href="menu.html" class="block py-2">Menu</a>
-        <a href="about.html" class="block py-2">Tentang Kami</a>
-        <a href="contact.html" class="block py-2">Kontak</a>
-      </nav>
-      <!-- END MOBILE NAV -->
-    </header>
-    <!-- END HEADER -->
-
-    <!-- BEGIN HERO -->
-    <!-- Hero -->
-    <main>
-      <section class="relative">
-        <!-- Background hero photo (interior). Using local SVG asset for faster load and consistent theme. -->
-        <div class="h-96 md:h-[520px] bg-cover bg-center relative">
-          <!-- Hero: external image (Unsplash). Query returns a high-quality interior photo matching "luxury chinese restaurant interior" -->
-          <img src="assets/hero.jpg" alt="Interior Golden Dragon Wok" class="w-full h-full object-cover absolute inset-0" />
-          <div class="absolute inset-0 bg-red-900/40 backdrop-brightness-90"></div>
-          <div class="container mx-auto relative z-10 px-4 h-full flex items-center">
-            <div class="max-w-2xl text-white">
-              <span class="inline-block bg-gold-600 text-red-900 px-3 py-1 rounded-md font-semibold mb-3">Authentic Chinese Cuisine</span>
-              <h2 class="text-3xl md:text-5xl font-extrabold mt-4">Golden Dragon Wok</h2>
-              <p class="mt-4 text-lg md:text-xl">Menjaga keaslian rasa Tiongkok sejak lama — bahan segar, bumbu tradisional, suasana hangat.</p>
-              <div class="mt-6 flex gap-3">
-                <a href="menu.html" class="bg-white text-red-800 px-4 py-2 rounded shadow font-semibold">Lihat Menu</a>
-                <a href="contact.html#reservasi" class="border border-white text-white px-4 py-2 rounded font-semibold">Reservasi</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    </section>
     <!-- END HERO -->
 
-      <!-- Intro / Features -->
-      <section class="container mx-auto px-4 py-12">
-        <div class="grid md:grid-cols-3 gap-8 items-start">
-          <article class="space-y-3">
-            <h3 class="text-2xl font-bold">Keaslian Rasa</h3>
-            <p>Koki kami meracik resep tradisional Tiongkok dengan teknik otentik untuk menghadirkan cita rasa yang kaya dan berlapis.</p>
-          </article>
+    <!-- Intro / Features -->
+    <section class="container mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <article class="space-y-3">
+          <h3 class="text-2xl font-bold">Keaslian Rasa</h3>
+          <p>Koki kami meracik resep tradisional Tiongkok dengan teknik otentik untuk menghadirkan cita rasa yang kaya
+            dan berlapis.</p>
+        </article>
 
-          <article class="space-y-3">
-            <h3 class="text-2xl font-bold">Suasana Hangat</h3>
-            <p>Interior bergaya klasik dengan sentuhan motif tradisional, cocok untuk makan malam keluarga atau acara spesial.</p>
-          </article>
+        <article class="space-y-3">
+          <h3 class="text-2xl font-bold">Suasana Hangat</h3>
+          <p>Interior bergaya klasik dengan sentuhan motif tradisional, cocok untuk makan malam keluarga atau acara
+            spesial.</p>
+        </article>
 
-          <article class="space-y-3">
-            <h3 class="text-2xl font-bold">Buka di Malang</h3>
-            <p>Terletak di Malang, Jawa Timur. Datang langsung atau pesan via telepon untuk pembelian dan reservasi meja.</p>
-          </article>
-        </div>
-      </section>
+        <article class="space-y-3">
+          <h3 class="text-2xl font-bold">Buka di Malang</h3>
+          <p>Terletak di Malang, Jawa Timur. Datang langsung atau pesan via telepon untuk pembelian dan reservasi meja.
+          </p>
+        </article>
+      </div>
+    </section>
 
-      <!-- Small showcase / quick menu preview -->
-      <section class="bg-red-50 py-10">
-        <div class="container mx-auto px-4">
-          <h3 class="text-2xl font-bold mb-6">Beberapa Favorit Kami</h3>
-            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-            <!-- Using external Unsplash images (realistic photos). These URLs use Unsplash source queries — images may vary per request but match the keywords. -->
-            <div class="bg-white p-4 rounded shadow">
-              <img src="assets/lumpia.avif" alt="Lumpia" class="w-full h-40 object-cover rounded" />
-              <h4 class="mt-3 font-semibold">Lumpia</h4>
-            </div>
-            <div class="bg-white p-4 rounded shadow">
-              <img src="assets/pangsit.avif" alt="Pangsit" class="w-full h-40 object-cover rounded" />
-              <h4 class="mt-3 font-semibold">Pangsit</h4>
-            </div>
-            <div class="bg-white p-4 rounded shadow">
-              <img src="assets/sup-wonton.jpg" alt="Sup Wonton" class="w-full h-40 object-cover rounded" />
-              <h4 class="mt-3 font-semibold">Sup Wonton</h4>
-            </div>
-            <div class="bg-white p-4 rounded shadow">
-              <img src="assets/kung-pao-chicken.webp" alt="Kungpao Chicken" class="w-full h-40 object-cover rounded" />
-              <h4 class="mt-3 font-semibold">Kungpao Chicken</h4>
-            </div>
+    <!-- Small showcase / quick menu preview -->
+    <section class="bg-red-50 py-10">
+      <div class="container mx-auto px-4">
+        <h3 class="text-2xl font-bold mb-6">Beberapa Favorit Kami</h3>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Using external Unsplash images (realistic photos). These URLs use Unsplash source queries — images may vary per request but match the keywords. -->
+          <div class="bg-white p-4 rounded shadow">
+            <img src="assets/lumpia.avif" alt="Lumpia" class="w-full h-40 object-cover rounded" />
+            <h4 class="mt-3 font-semibold">Lumpia</h4>
           </div>
-          <div class="mt-6">
-            <a href="menu.html" class="text-red-700 font-semibold underline">Lihat semua menu →</a>
+          <div class="bg-white p-4 rounded shadow">
+            <img src="assets/pangsit.avif" alt="Pangsit" class="w-full h-40 object-cover rounded" />
+            <h4 class="mt-3 font-semibold">Pangsit</h4>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <img src="assets/sup-wonton.jpg" alt="Sup Wonton" class="w-full h-40 object-cover rounded" />
+            <h4 class="mt-3 font-semibold">Sup Wonton</h4>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <img src="assets/kung-pao-chicken.webp" alt="Kungpao Chicken" class="w-full h-40 object-cover rounded" />
+            <h4 class="mt-3 font-semibold">Kungpao Chicken</h4>
           </div>
         </div>
-      </section>
+        <div class="mt-6">
+          <a href="menu.html" class="text-red-700 font-semibold underline">Lihat semua menu →</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- BEGIN FOOTER -->
   <!-- Footer (shared) -->
   <footer class="bg-red-800 text-white mt-12">
-      <div class="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
-        <div>
-          <img src="assets/logo.svg" alt="Golden Dragon Wok" class="h-12 mb-3" />
-          <p>Golden Dragon Wok — keaslian rasa Tiongkok di Malang.</p>
-        </div>
-        <div>
-          <h4 class="font-semibold">Link</h4>
-          <ul class="mt-2">
-            <li><a href="index.html" class="hover:underline">Beranda</a></li>
-            <li><a href="menu.html" class="hover:underline">Menu</a></li>
-            <li><a href="about.html" class="hover:underline">Tentang Kami</a></li>
-            <li><a href="contact.html" class="hover:underline">Kontak</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-semibold">Media Sosial</h4>
-          <p class="mt-2">Ikuti kami: <a href="#" class="underline">Instagram</a> • <a href="#" class="underline">Facebook</a></p>
-        </div>
+    <div class="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
+      <div>
+        <img src="assets/logo.svg" alt="Golden Dragon Wok" class="h-12 mb-3" />
+        <p>Golden Dragon Wok — keaslian rasa Tiongkok di Malang.</p>
       </div>
-      <div class="bg-red-900 text-red-100 text-sm py-3">
-        <div class="container mx-auto px-4 text-center">© 2025 Golden Dragon Wok — Malang, Jawa Timur</div>
+      <div>
+        <h4 class="font-semibold">Link</h4>
+        <ul class="mt-2">
+          <li><a href="index.html" class="hover:underline">Beranda</a></li>
+          <li><a href="menu.html" class="hover:underline">Menu</a></li>
+          <li><a href="about.html" class="hover:underline">Tentang Kami</a></li>
+          <li><a href="contact.html" class="hover:underline">Kontak</a></li>
+        </ul>
       </div>
+      <div>
+        <h4 class="font-semibold">Media Sosial</h4>
+        <p class="mt-2">Ikuti kami: <a href="#" class="underline">Instagram</a> • <a href="#"
+            class="underline">Facebook</a></p>
+      </div>
+    </div>
+    <div class="bg-red-900 text-red-100 text-sm py-3">
+      <div class="container mx-auto px-4 text-center">© 2025 Golden Dragon Wok — Malang, Jawa Timur</div>
+    </div>
   </footer>
   <!-- END FOOTER -->
 
-    <script>
-      // Simple mobile nav toggle
-      const navToggle = document.getElementById('navToggle');
-      const mobileNav = document.getElementById('mobileNav');
-      navToggle?.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
-    </script>
-  </body>
+  <script>
+    // Simple mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    navToggle?.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+  </script>
+</body>
+
 </html>

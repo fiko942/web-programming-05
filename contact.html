@@ -1,64 +1,67 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Golden Dragon Wok — Kontak</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/styles.css" />
-  </head>
-  <body class="bg-white text-gray-800 antialiased">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Golden Dragon Wok — Kontak</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
   <!-- BEGIN HEADER -->
   <header class="bg-red-700 text-white shadow">
-      <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="index.html" class="flex items-center gap-3">
-          <img src="assets/logo.svg" alt="Golden Dragon Wok logo" class="h-12 w-12" />
-          <div>
-            <h1 class="font-bold text-xl">Golden Dragon Wok</h1>
-            <p class="text-sm">Malang, Jawa Timur</p>
-          </div>
-        </a>
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo.svg" alt="Golden Dragon Wok logo" class="h-12 w-12" />
+        <div>
+          <h1 class="font-bold text-xl">Golden Dragon Wok</h1>
+          <p class="text-sm">Malang, Jawa Timur</p>
+        </div>
+      </a>
 
-        <nav aria-label="Main navigation" class="hidden md:flex gap-6 items-center">
-          <a href="index.html" class="hover:underline">Beranda</a>
-          <a href="menu.html" class="hover:underline">Menu</a>
-          <a href="about.html" class="hover:underline">Tentang Kami</a>
-          <a href="contact.html" class="hover:underline font-semibold">Kontak</a>
-        </nav>
+      <nav aria-label="Main navigation" class="hidden md:flex gap-6 items-center">
+        <a href="index.html" class="hover:underline">Beranda</a>
+        <a href="menu.html" class="hover:underline">Menu</a>
+        <a href="about.html" class="hover:underline">Tentang Kami</a>
+        <a href="contact.html" class="hover:underline font-semibold">Kontak</a>
+      </nav>
 
-        <div class="flex items-center gap-3">
-          <a href="#reservasi" class="bg-gold-600 text-red-900 px-4 py-2 rounded font-semibold hover:opacity-90">Reservasi</a>
-          <button class="md:hidden" id="navToggle4" aria-label="Buka menu">☰</button>
+      <div class="flex items-center gap-3">
+        <a href="#reservasi"
+          class="bg-gold-600 text-red-900 px-4 py-2 rounded font-semibold hover:opacity-90">Reservasi</a>
+        <button class="md:hidden" id="navToggle4" aria-label="Buka menu">☰</button>
+      </div>
+    </div>
+    <!-- BEGIN MOBILE NAV -->
+    <nav id="mobileNav4" class="md:hidden bg-red-600 text-white px-4 py-3 hidden">
+      <a href="index.html" class="block py-2">Beranda</a>
+      <a href="menu.html" class="block py-2">Menu</a>
+      <a href="about.html" class="block py-2">Tentang Kami</a>
+      <a href="contact.html" class="block py-2">Kontak</a>
+    </nav>
+    <!-- END MOBILE NAV -->
+  </header>
+  <!-- END HEADER -->
+
+  <main>
+    <!-- BEGIN HERO -->
+    <section class="h-56 bg-cover bg-center relative" style="background-image: url('assets/hero.jpg')">
+      <div class="absolute inset-0 bg-red-900/40"></div>
+      <div class="container mx-auto px-4 h-full flex items-center">
+        <div class="text-white">
+          <h2 class="text-3xl font-bold">Kontak & Lokasi</h2>
         </div>
       </div>
-  <!-- BEGIN MOBILE NAV -->
-  <nav id="mobileNav4" class="md:hidden bg-red-600 text-white px-4 py-3 hidden">
-        <a href="index.html" class="block py-2">Beranda</a>
-        <a href="menu.html" class="block py-2">Menu</a>
-        <a href="about.html" class="block py-2">Tentang Kami</a>
-        <a href="contact.html" class="block py-2">Kontak</a>
-      </nav>
-      <!-- END MOBILE NAV -->
-    </header>
-    <!-- END HEADER -->
-
-    <main>
-    <!-- BEGIN HERO -->
-      <section class="h-56 bg-cover bg-center relative" style="background-image: url('assets/hero.jpg')">
-        <div class="absolute inset-0 bg-red-900/40"></div>
-        <div class="container mx-auto px-4 h-full flex items-center">
-          <div class="text-white">
-            <h2 class="text-3xl font-bold">Kontak & Lokasi</h2>
-          </div>
-        </div>
-      </section>
+    </section>
     <!-- END HERO -->
-      <div class="container mx-auto px-4 py-12">
+    <div class="container mx-auto px-4 py-12">
 
       <div class="grid lg:grid-cols-2 gap-8">
         <div>
           <h3 class="font-semibold text-xl">Alamat</h3>
-          <p class="mt-2">Golden Dragon Wok<br/>Malang, Jawa Timur<br/>Koordinat: -7.983908, 112.621391</p>
+          <p class="mt-2">Golden Dragon Wok<br />Malang, Jawa Timur<br />Koordinat: -7.983908, 112.621391</p>
 
           <h4 class="mt-4 font-semibold">Jam Buka</h4>
           <p class="mt-1">Senin - Minggu: 10:00 - 22:00</p>
@@ -70,24 +73,31 @@
           <h4 class="mt-6 font-semibold">Temukan Kami</h4>
           <!-- Map embed using lat/long; uses OpenStreetMap iframe with marker via latlong.net coordinates -->
           <div class="mt-3 border rounded overflow-hidden">
-            <iframe title="Golden Dragon Wok - Malang" src="https://www.openstreetmap.org/export/embed.html?bbox=112.615391%2C-7.987908%2C112.627391%2C-7.979908&amp;layer=mapnik&amp;marker=-7.983908%2C112.621391" style="width:100%; height:300px; border:0"></iframe>
-            <p class="text-xs p-2">Peta: <a href="https://www.openstreetmap.org/?mlat=-7.983908&amp;mlon=112.621391#map=17/-7.98391/112.62139" target="_blank" class="underline">Lihat di OpenStreetMap</a></p>
+            <iframe title="Golden Dragon Wok - Malang"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=112.615391%2C-7.987908%2C112.627391%2C-7.979908&amp;layer=mapnik&amp;marker=-7.983908%2C112.621391"
+              style="width:100%; height:300px; border:0"></iframe>
+            <p class="text-xs p-2">Peta: <a
+                href="https://www.openstreetmap.org/?mlat=-7.983908&amp;mlon=112.621391#map=17/-7.98391/112.62139"
+                target="_blank" class="underline">Lihat di OpenStreetMap</a></p>
           </div>
         </div>
 
         <div>
           <h3 class="font-semibold text-xl">Form Pemesanan / Kontak</h3>
-          <p class="mt-2">Isi formulir berikut untuk pesan atau reservasi. Kami akan menghubungi Anda kembali via email/telepon.</p>
+          <p class="mt-2">Isi formulir berikut untuk pesan atau reservasi. Kami akan menghubungi Anda kembali via
+            email/telepon.</p>
 
           <form id="contactForm" class="mt-4 space-y-4 bg-white p-6 rounded shadow" action="#" method="post">
             <label class="block">
               <span class="text-sm font-medium">Nama</span>
-              <input name="name" required class="mt-1 block w-full border rounded px-3 py-2" placeholder="Nama lengkap" />
+              <input name="name" required class="mt-1 block w-full border rounded px-3 py-2"
+                placeholder="Nama lengkap" />
             </label>
 
             <label class="block">
               <span class="text-sm font-medium">Email</span>
-              <input type="email" name="email" required class="mt-1 block w-full border rounded px-3 py-2" placeholder="email@example.com" />
+              <input type="email" name="email" required class="mt-1 block w-full border rounded px-3 py-2"
+                placeholder="email@example.com" />
             </label>
 
             <label class="block">
@@ -97,7 +107,8 @@
 
             <label class="block">
               <span class="text-sm font-medium">Pesan / Permintaan Reservasi</span>
-              <textarea name="message" rows="4" class="mt-1 block w-full border rounded px-3 py-2" placeholder="Tanggal, jam, jumlah tamu, permintaan khusus"></textarea>
+              <textarea name="message" rows="4" class="mt-1 block w-full border rounded px-3 py-2"
+                placeholder="Tanggal, jam, jumlah tamu, permintaan khusus"></textarea>
             </label>
 
             <div class="flex items-center gap-3">
@@ -106,53 +117,56 @@
             </div>
           </form>
 
-          <p class="text-xs mt-3 text-gray-600">Catatan: Form ini adalah contoh statis. Untuk menerima pesan, hubungkan backend atau layanan form mail.</p>
+          <p class="text-xs mt-3 text-gray-600">Catatan: Form ini adalah contoh statis. Untuk menerima pesan, hubungkan
+            backend atau layanan form mail.</p>
         </div>
       </div>
 
       <!-- Anchor target for reservasi CTA -->
       <div id="reservasi" class="mt-8"></div>
-    </main>
+  </main>
 
   <!-- BEGIN FOOTER -->
   <footer class="bg-red-800 text-white mt-12">
-      <div class="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
-        <div>
-          <img src="assets/logo.svg" alt="Golden Dragon Wok" class="h-12 mb-3" />
-          <p>Golden Dragon Wok — keaslian rasa Tiongkok di Malang.</p>
-        </div>
-        <div>
-          <h4 class="font-semibold">Link</h4>
-          <ul class="mt-2">
-            <li><a href="index.html" class="hover:underline">Beranda</a></li>
-            <li><a href="menu.html" class="hover:underline">Menu</a></li>
-            <li><a href="about.html" class="hover:underline">Tentang Kami</a></li>
-            <li><a href="contact.html" class="hover:underline">Kontak</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-semibold">Media Sosial</h4>
-          <p class="mt-2">Ikuti kami: <a href="#" class="underline">Instagram</a> • <a href="#" class="underline">Facebook</a></p>
-        </div>
+    <div class="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
+      <div>
+        <img src="assets/logo.svg" alt="Golden Dragon Wok" class="h-12 mb-3" />
+        <p>Golden Dragon Wok — keaslian rasa Tiongkok di Malang.</p>
       </div>
-      <div class="bg-red-900 text-red-100 text-sm py-3">
-        <div class="container mx-auto px-4 text-center">© 2025 Golden Dragon Wok — Malang, Jawa Timur</div>
+      <div>
+        <h4 class="font-semibold">Link</h4>
+        <ul class="mt-2">
+          <li><a href="index.html" class="hover:underline">Beranda</a></li>
+          <li><a href="menu.html" class="hover:underline">Menu</a></li>
+          <li><a href="about.html" class="hover:underline">Tentang Kami</a></li>
+          <li><a href="contact.html" class="hover:underline">Kontak</a></li>
+        </ul>
       </div>
+      <div>
+        <h4 class="font-semibold">Media Sosial</h4>
+        <p class="mt-2">Ikuti kami: <a href="#" class="underline">Instagram</a> • <a href="#"
+            class="underline">Facebook</a></p>
+      </div>
+    </div>
+    <div class="bg-red-900 text-red-100 text-sm py-3">
+      <div class="container mx-auto px-4 text-center">© 2025 Golden Dragon Wok — Malang, Jawa Timur</div>
+    </div>
   </footer>
   <!-- END FOOTER -->
 
-    <script>
-      const navToggle4 = document.getElementById('navToggle4');
-      const mobileNav4 = document.getElementById('mobileNav4');
-      navToggle4?.addEventListener('click', () => mobileNav4.classList.toggle('hidden'));
+  <script>
+    const navToggle4 = document.getElementById('navToggle4');
+    const mobileNav4 = document.getElementById('mobileNav4');
+    navToggle4?.addEventListener('click', () => mobileNav4.classList.toggle('hidden'));
 
-      // Basic client-side handling for the example form (prevents navigation)
-      const contactForm = document.getElementById('contactForm');
-      contactForm?.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Terima kasih! Pesan Anda telah dikirim (demo).');
-        contactForm.reset();
-      });
-    </script>
-  </body>
+    // Basic client-side handling for the example form (prevents navigation)
+    const contactForm = document.getElementById('contactForm');
+    contactForm?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Terima kasih! Pesan Anda telah dikirim (demo).');
+      contactForm.reset();
+    });
+  </script>
+</body>
+
 </html>

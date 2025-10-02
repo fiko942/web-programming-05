@@ -1,114 +1,124 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Golden Dragon Wok — Tentang Kami</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/styles.css" />
-  </head>
-  <body class="bg-white text-gray-800 antialiased">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Golden Dragon Wok — Tentang Kami</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
   <!-- BEGIN HEADER -->
   <header class="bg-red-700 text-white shadow">
-      <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="index.html" class="flex items-center gap-3">
-          <img src="assets/logo.svg" alt="Golden Dragon Wok logo" class="h-12 w-12" />
-          <div>
-            <h1 class="font-bold text-xl">Golden Dragon Wok</h1>
-            <p class="text-sm">Malang, Jawa Timur</p>
-          </div>
-        </a>
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo.svg" alt="Golden Dragon Wok logo" class="h-12 w-12" />
+        <div>
+          <h1 class="font-bold text-xl">Golden Dragon Wok</h1>
+          <p class="text-sm">Malang, Jawa Timur</p>
+        </div>
+      </a>
 
-        <nav aria-label="Main navigation" class="hidden md:flex gap-6 items-center">
-          <a href="index.html" class="hover:underline">Beranda</a>
-          <a href="menu.html" class="hover:underline">Menu</a>
-          <a href="about.html" class="hover:underline font-semibold">Tentang Kami</a>
-          <a href="contact.html" class="hover:underline">Kontak</a>
-        </nav>
+      <nav aria-label="Main navigation" class="hidden md:flex gap-6 items-center">
+        <a href="index.html" class="hover:underline">Beranda</a>
+        <a href="menu.html" class="hover:underline">Menu</a>
+        <a href="about.html" class="hover:underline font-semibold">Tentang Kami</a>
+        <a href="contact.html" class="hover:underline">Kontak</a>
+      </nav>
 
-        <div class="flex items-center gap-3">
-          <a href="contact.html#reservasi" class="bg-gold-600 text-red-900 px-4 py-2 rounded font-semibold hover:opacity-90">Reservasi</a>
-          <button class="md:hidden" id="navToggle3" aria-label="Buka menu">☰</button>
+      <div class="flex items-center gap-3">
+        <a href="contact.html#reservasi"
+          class="bg-gold-600 text-red-900 px-4 py-2 rounded font-semibold hover:opacity-90">Reservasi</a>
+        <button class="md:hidden" id="navToggle3" aria-label="Buka menu">☰</button>
+      </div>
+    </div>
+    <!-- BEGIN MOBILE NAV -->
+    <nav id="mobileNav3" class="md:hidden bg-red-600 text-white px-4 py-3 hidden">
+      <a href="index.html" class="block py-2">Beranda</a>
+      <a href="menu.html" class="block py-2">Menu</a>
+      <a href="about.html" class="block py-2">Tentang Kami</a>
+      <a href="contact.html" class="block py-2">Kontak</a>
+    </nav>
+    <!-- END MOBILE NAV -->
+  </header>
+  <!-- END HEADER -->
+
+  <main>
+    <!-- BEGIN HERO -->
+    <section class="h-56 bg-cover bg-center relative" style="background-image: url('assets/hero.jpg')">
+      <div class="absolute inset-0 bg-red-900/40"></div>
+      <div class="container mx-auto px-4 h-full flex items-center">
+        <div class="text-white">
+          <h2 class="text-3xl font-bold">Tentang Golden Dragon Wok</h2>
         </div>
       </div>
-  <!-- BEGIN MOBILE NAV -->
-  <nav id="mobileNav3" class="md:hidden bg-red-600 text-white px-4 py-3 hidden">
-        <a href="index.html" class="block py-2">Beranda</a>
-        <a href="menu.html" class="block py-2">Menu</a>
-        <a href="about.html" class="block py-2">Tentang Kami</a>
-        <a href="contact.html" class="block py-2">Kontak</a>
-      </nav>
-      <!-- END MOBILE NAV -->
-    </header>
-    <!-- END HEADER -->
-
-    <main>
-    <!-- BEGIN HERO -->
-      <section class="h-56 bg-cover bg-center relative" style="background-image: url('assets/hero.jpg')">
-        <div class="absolute inset-0 bg-red-900/40"></div>
-        <div class="container mx-auto px-4 h-full flex items-center">
-          <div class="text-white">
-            <h2 class="text-3xl font-bold">Tentang Golden Dragon Wok</h2>
-          </div>
-        </div>
-      </section>
+    </section>
     <!-- END HERO -->
-      <div class="container mx-auto px-4 py-12">
+    <div class="container mx-auto px-4 py-12">
       <h2 class="text-3xl font-bold mb-4">Sejarah Golden Dragon Wok</h2>
-      <p class="mb-6">Golden Dragon Wok dimulai dari kecintaan pemiliknya pada masakan Tiongkok tradisional. Dengan resep turun-temurun dan bahan berkualitas, restoran ini bertujuan menghadirkan pengalaman kuliner yang otentik di Malang.</p>
+      <p class="mb-6">Golden Dragon Wok dimulai dari kecintaan pemiliknya pada masakan Tiongkok tradisional. Dengan
+        resep turun-temurun dan bahan berkualitas, restoran ini bertujuan menghadirkan pengalaman kuliner yang otentik
+        di Malang.</p>
 
       <section class="grid md:grid-cols-2 gap-8 items-start">
         <div>
           <h3 class="text-2xl font-bold mb-2">Profil Pemilik</h3>
           <p class="mb-2">Nama: Wiji Fiko Teren</p>
           <p class="mb-2">Email: <a href="mailto:tobellord@gmail.com" class="underline">tobellord@gmail.com</a></p>
-          <p class="mb-4">Wiji memulai Golden Dragon Wok dengan visi mempopulerkan rasa autentik, sambil menjaga keramahan layanan ala keluarga.</p>
+          <p class="mb-4">Wiji memulai Golden Dragon Wok dengan visi mempopulerkan rasa autentik, sambil menjaga
+            keramahan layanan ala keluarga.</p>
 
           <h4 class="text-xl font-semibold">Filosofi Layanan</h4>
-          <p class="mt-2">Kami percaya pada keramahan, kesegaran bahan, dan perhatian terhadap detail. Semua hidangan disiapkan dengan cinta dan dihormati tradisi.</p>
+          <p class="mt-2">Kami percaya pada keramahan, kesegaran bahan, dan perhatian terhadap detail. Semua hidangan
+            disiapkan dengan cinta dan dihormati tradisi.</p>
         </div>
 
         <aside>
           <h4 class="text-xl font-semibold mb-2">Suasana Restoran</h4>
-          <p>Kombinasi merah, emas dan motif tradisional menciptakan suasana hangat dan elegan. Cocok untuk makan bersama keluarga ataupun pertemuan bisnis.</p>
+          <p>Kombinasi merah, emas dan motif tradisional menciptakan suasana hangat dan elegan. Cocok untuk makan
+            bersama keluarga ataupun pertemuan bisnis.</p>
           <div class="mt-4">
             <img src="assets/hero.jpg" alt="Interior restoran" class="w-full h-48 object-cover rounded" />
           </div>
         </aside>
       </section>
-    </main>
+  </main>
 
   <!-- BEGIN FOOTER -->
   <footer class="bg-red-800 text-white mt-12">
-      <div class="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
-        <div>
-          <img src="assets/logo.svg" alt="Golden Dragon Wok" class="h-12 mb-3" />
-          <p>Golden Dragon Wok — keaslian rasa Tiongkok di Malang.</p>
-        </div>
-        <div>
-          <h4 class="font-semibold">Link</h4>
-          <ul class="mt-2">
-            <li><a href="index.html" class="hover:underline">Beranda</a></li>
-            <li><a href="menu.html" class="hover:underline">Menu</a></li>
-            <li><a href="about.html" class="hover:underline">Tentang Kami</a></li>
-            <li><a href="contact.html" class="hover:underline">Kontak</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-semibold">Media Sosial</h4>
-          <p class="mt-2">Ikuti kami: <a href="#" class="underline">Instagram</a> • <a href="#" class="underline">Facebook</a></p>
-        </div>
+    <div class="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
+      <div>
+        <img src="assets/logo.svg" alt="Golden Dragon Wok" class="h-12 mb-3" />
+        <p>Golden Dragon Wok — keaslian rasa Tiongkok di Malang.</p>
       </div>
-      <div class="bg-red-900 text-red-100 text-sm py-3">
-        <div class="container mx-auto px-4 text-center">© 2025 Golden Dragon Wok — Malang, Jawa Timur</div>
+      <div>
+        <h4 class="font-semibold">Link</h4>
+        <ul class="mt-2">
+          <li><a href="index.html" class="hover:underline">Beranda</a></li>
+          <li><a href="menu.html" class="hover:underline">Menu</a></li>
+          <li><a href="about.html" class="hover:underline">Tentang Kami</a></li>
+          <li><a href="contact.html" class="hover:underline">Kontak</a></li>
+        </ul>
       </div>
+      <div>
+        <h4 class="font-semibold">Media Sosial</h4>
+        <p class="mt-2">Ikuti kami: <a href="#" class="underline">Instagram</a> • <a href="#"
+            class="underline">Facebook</a></p>
+      </div>
+    </div>
+    <div class="bg-red-900 text-red-100 text-sm py-3">
+      <div class="container mx-auto px-4 text-center">© 2025 Golden Dragon Wok — Malang, Jawa Timur</div>
+    </div>
   </footer>
   <!-- END FOOTER -->
 
-    <script>
-      const navToggle3 = document.getElementById('navToggle3');
-      const mobileNav3 = document.getElementById('mobileNav3');
-      navToggle3?.addEventListener('click', () => mobileNav3.classList.toggle('hidden'));
-    </script>
-  </body>
+  <script>
+    const navToggle3 = document.getElementById('navToggle3');
+    const mobileNav3 = document.getElementById('mobileNav3');
+    navToggle3?.addEventListener('click', () => mobileNav3.classList.toggle('hidden'));
+  </script>
+</body>
+
 </html>

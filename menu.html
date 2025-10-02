@@ -1,62 +1,65 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Golden Dragon Wok — Menu</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/styles.css" />
-  </head>
-  <body class="bg-white text-gray-800 antialiased">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Golden Dragon Wok — Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
   <!-- BEGIN HEADER -->
   <!-- Reuse header -->
   <header class="bg-red-700 text-white shadow">
-      <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="index.html" class="flex items-center gap-3">
-          <img src="assets/logo.svg" alt="Golden Dragon Wok logo" class="h-12 w-12" />
-          <div>
-            <h1 class="font-bold text-xl">Golden Dragon Wok</h1>
-            <p class="text-sm">Malang, Jawa Timur</p>
-          </div>
-        </a>
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo.svg" alt="Golden Dragon Wok logo" class="h-12 w-12" />
+        <div>
+          <h1 class="font-bold text-xl">Golden Dragon Wok</h1>
+          <p class="text-sm">Malang, Jawa Timur</p>
+        </div>
+      </a>
 
-        <nav aria-label="Main navigation" class="hidden md:flex gap-6 items-center">
-          <a href="index.html" class="hover:underline">Beranda</a>
-          <a href="menu.html" class="hover:underline font-semibold">Menu</a>
-          <a href="about.html" class="hover:underline">Tentang Kami</a>
-          <a href="contact.html" class="hover:underline">Kontak</a>
-        </nav>
+      <nav aria-label="Main navigation" class="hidden md:flex gap-6 items-center">
+        <a href="index.html" class="hover:underline">Beranda</a>
+        <a href="menu.html" class="hover:underline font-semibold">Menu</a>
+        <a href="about.html" class="hover:underline">Tentang Kami</a>
+        <a href="contact.html" class="hover:underline">Kontak</a>
+      </nav>
 
-        <div class="flex items-center gap-3">
-          <a href="contact.html#reservasi" class="bg-gold-600 text-red-900 px-4 py-2 rounded font-semibold hover:opacity-90">Reservasi</a>
-          <button class="md:hidden" id="navToggle2" aria-label="Buka menu">☰</button>
+      <div class="flex items-center gap-3">
+        <a href="contact.html#reservasi"
+          class="bg-gold-600 text-red-900 px-4 py-2 rounded font-semibold hover:opacity-90">Reservasi</a>
+        <button class="md:hidden" id="navToggle2" aria-label="Buka menu">☰</button>
+      </div>
+    </div>
+    <!-- BEGIN MOBILE NAV -->
+    <nav id="mobileNav2" class="md:hidden bg-red-600 text-white px-4 py-3 hidden">
+      <a href="index.html" class="block py-2">Beranda</a>
+      <a href="menu.html" class="block py-2">Menu</a>
+      <a href="about.html" class="block py-2">Tentang Kami</a>
+      <a href="contact.html" class="block py-2">Kontak</a>
+    </nav>
+    <!-- END MOBILE NAV -->
+  </header>
+  <!-- END HEADER -->
+
+  <main>
+    <!-- BEGIN HERO -->
+    <!-- Page hero/banner using same interior photo -->
+    <section class="h-56 bg-cover bg-center relative" style="background-image: url('assets/hero.jpg')">
+      <div class="absolute inset-0 bg-red-900/40"></div>
+      <div class="container mx-auto px-4 h-full flex items-center">
+        <div class="text-white">
+          <h2 class="text-3xl font-bold">Menu Kami</h2>
+          <p class="mt-2">Beberapa hidangan populer.</p>
         </div>
       </div>
-  <!-- BEGIN MOBILE NAV -->
-  <nav id="mobileNav2" class="md:hidden bg-red-600 text-white px-4 py-3 hidden">
-        <a href="index.html" class="block py-2">Beranda</a>
-        <a href="menu.html" class="block py-2">Menu</a>
-        <a href="about.html" class="block py-2">Tentang Kami</a>
-        <a href="contact.html" class="block py-2">Kontak</a>
-      </nav>
-      <!-- END MOBILE NAV -->
-    </header>
-    <!-- END HEADER -->
-
-    <main>
-    <!-- BEGIN HERO -->
-      <!-- Page hero/banner using same interior photo -->
-      <section class="h-56 bg-cover bg-center relative" style="background-image: url('assets/hero.jpg')">
-        <div class="absolute inset-0 bg-red-900/40"></div>
-        <div class="container mx-auto px-4 h-full flex items-center">
-          <div class="text-white">
-            <h2 class="text-3xl font-bold">Menu Kami</h2>
-            <p class="mt-2">Beberapa hidangan populer.</p>
-          </div>
-        </div>
-      </section>
+    </section>
     <!-- END HERO -->
-      <div class="container mx-auto px-4 py-12">
+    <div class="container mx-auto px-4 py-12">
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Menu item template: image, name, description, price -->
@@ -65,7 +68,8 @@
           <img src="assets/lumpia.avif" alt="Lumpia" class="w-full h-48 object-cover" />
           <div class="p-4">
             <h3 class="font-semibold text-xl">Lumpia</h3>
-            <p class="text-sm text-gray-600 mt-1">Gulung renyah berisi sayur dan daging pilihan, disajikan dengan saus khas.</p>
+            <p class="text-sm text-gray-600 mt-1">Gulung renyah berisi sayur dan daging pilihan, disajikan dengan saus
+              khas.</p>
             <div class="mt-3 font-bold">Rp 28.000</div>
           </div>
         </article>
@@ -75,7 +79,8 @@
           <img src="assets/pangsit.avif" alt="Pangsit" class="w-full h-48 object-cover" />
           <div class="p-4">
             <h3 class="font-semibold text-xl">Pangsit Goreng / Rebus</h3>
-            <p class="text-sm text-gray-600 mt-1">Pilihan goreng renyah atau rebus lembut, diisi daging dan rempah pilihan.</p>
+            <p class="text-sm text-gray-600 mt-1">Pilihan goreng renyah atau rebus lembut, diisi daging dan rempah
+              pilihan.</p>
             <div class="mt-3 font-bold">Rp 30.000</div>
           </div>
         </article>
@@ -85,7 +90,8 @@
           <img src="assets/sup-wonton.jpg" alt="Sup Wonton" class="w-full h-48 object-cover" />
           <div class="p-4">
             <h3 class="font-semibold text-xl">Sup Wonton</h3>
-            <p class="text-sm text-gray-600 mt-1">Kuah bening harum dengan wonton isi daging, sangat cocok untuk pemanasan suasana.</p>
+            <p class="text-sm text-gray-600 mt-1">Kuah bening harum dengan wonton isi daging, sangat cocok untuk
+              pemanasan suasana.</p>
             <div class="mt-3 font-bold">Rp 35.000</div>
           </div>
         </article>
@@ -105,7 +111,8 @@
           <img src="assets/kung-pao-chicken.webp" alt="Kungpao Chicken" class="w-full h-48 object-cover" />
           <div class="p-4">
             <h3 class="font-semibold text-xl">Kungpao Chicken</h3>
-            <p class="text-sm text-gray-600 mt-1">Ayam pedas manis dengan kacang panggang dan cabai kering khas Sichuan.</p>
+            <p class="text-sm text-gray-600 mt-1">Ayam pedas manis dengan kacang panggang dan cabai kering khas Sichuan.
+            </p>
             <div class="mt-3 font-bold">Rp 45.000</div>
           </div>
         </article>
@@ -115,7 +122,8 @@
           <img src="assets/peking-duck.webp" alt="Bebek Peking" class="w-full h-48 object-cover" />
           <div class="p-4">
             <h3 class="font-semibold text-xl">Bebek Peking (Porsi)</h3>
-            <p class="text-sm text-gray-600 mt-1">Bebek panggang renyah disajikan dengan pancake, saus hoisin, dan sayur.</p>
+            <p class="text-sm text-gray-600 mt-1">Bebek panggang renyah disajikan dengan pancake, saus hoisin, dan
+              sayur.</p>
             <div class="mt-3 font-bold">Rp 220.000</div>
           </div>
         </article>
@@ -125,7 +133,8 @@
           <img src="assets/char-siu.jpg" alt="Char Siu" class="w-full h-48 object-cover" />
           <div class="p-4">
             <h3 class="font-semibold text-xl">Char Siu</h3>
-            <p class="text-sm text-gray-600 mt-1">Daging babi/ayam panggang dengan glaze manis khas Canton — iris tipis.</p>
+            <p class="text-sm text-gray-600 mt-1">Daging babi/ayam panggang dengan glaze manis khas Canton — iris tipis.
+            </p>
             <div class="mt-3 font-bold">Rp 65.000</div>
           </div>
         </article>
@@ -135,7 +144,8 @@
           <img src="assets/dimsum-set.jpg" alt="Dimsum" class="w-full h-48 object-cover" />
           <div class="p-4">
             <h3 class="font-semibold text-xl">Dimsum (Set)</h3>
-            <p class="text-sm text-gray-600 mt-1">Set dimsum berbagai jenis: siomay, hakau, dan lainnya — cocok untuk berbagi.</p>
+            <p class="text-sm text-gray-600 mt-1">Set dimsum berbagai jenis: siomay, hakau, dan lainnya — cocok untuk
+              berbagi.</p>
             <div class="mt-3 font-bold">Rp 55.000</div>
           </div>
         </article>
@@ -145,45 +155,48 @@
           <img src="assets/mie-goreng.png" alt="Mi Goreng" class="w-full h-48 object-cover" />
           <div class="p-4">
             <h3 class="font-semibold text-xl">Mi Goreng</h3>
-            <p class="text-sm text-gray-600 mt-1">Mi goreng khas dengan bumbu harum dan tambahan sayur serta protein pilihan.</p>
+            <p class="text-sm text-gray-600 mt-1">Mi goreng khas dengan bumbu harum dan tambahan sayur serta protein
+              pilihan.</p>
             <div class="mt-3 font-bold">Rp 30.000</div>
           </div>
         </article>
       </div>
-    </main>
+  </main>
 
   <!-- BEGIN FOOTER -->
   <!-- Footer -->
   <footer class="bg-red-800 text-white mt-12">
-      <div class="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
-        <div>
-          <img src="assets/logo.svg" alt="Golden Dragon Wok" class="h-12 mb-3" />
-          <p>Golden Dragon Wok — keaslian rasa Tiongkok di Malang.</p>
-        </div>
-        <div>
-          <h4 class="font-semibold">Link</h4>
-          <ul class="mt-2">
-            <li><a href="index.html" class="hover:underline">Beranda</a></li>
-            <li><a href="menu.html" class="hover:underline">Menu</a></li>
-            <li><a href="about.html" class="hover:underline">Tentang Kami</a></li>
-            <li><a href="contact.html" class="hover:underline">Kontak</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-semibold">Media Sosial</h4>
-          <p class="mt-2">Ikuti kami: <a href="#" class="underline">Instagram</a> • <a href="#" class="underline">Facebook</a></p>
-        </div>
+    <div class="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
+      <div>
+        <img src="assets/logo.svg" alt="Golden Dragon Wok" class="h-12 mb-3" />
+        <p>Golden Dragon Wok — keaslian rasa Tiongkok di Malang.</p>
       </div>
-      <div class="bg-red-900 text-red-100 text-sm py-3">
-        <div class="container mx-auto px-4 text-center">© 2025 Golden Dragon Wok — Malang, Jawa Timur</div>
+      <div>
+        <h4 class="font-semibold">Link</h4>
+        <ul class="mt-2">
+          <li><a href="index.html" class="hover:underline">Beranda</a></li>
+          <li><a href="menu.html" class="hover:underline">Menu</a></li>
+          <li><a href="about.html" class="hover:underline">Tentang Kami</a></li>
+          <li><a href="contact.html" class="hover:underline">Kontak</a></li>
+        </ul>
       </div>
+      <div>
+        <h4 class="font-semibold">Media Sosial</h4>
+        <p class="mt-2">Ikuti kami: <a href="#" class="underline">Instagram</a> • <a href="#"
+            class="underline">Facebook</a></p>
+      </div>
+    </div>
+    <div class="bg-red-900 text-red-100 text-sm py-3">
+      <div class="container mx-auto px-4 text-center">© 2025 Golden Dragon Wok — Malang, Jawa Timur</div>
+    </div>
   </footer>
   <!-- END FOOTER -->
 
-    <script>
-      const navToggle2 = document.getElementById('navToggle2');
-      const mobileNav2 = document.getElementById('mobileNav2');
-      navToggle2?.addEventListener('click', () => mobileNav2.classList.toggle('hidden'));
-    </script>
-  </body>
+  <script>
+    const navToggle2 = document.getElementById('navToggle2');
+    const mobileNav2 = document.getElementById('mobileNav2');
+    navToggle2?.addEventListener('click', () => mobileNav2.classList.toggle('hidden'));
+  </script>
+</body>
+
 </html>
