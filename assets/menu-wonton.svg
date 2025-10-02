@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="broth" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff7e6" />
+      <stop offset="1" stop-color="#f1d9b0" />
+    </linearGradient>
+    <filter id="brothShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.18" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="#f9fafb"/>
+  <g transform="translate(80,80)" filter="url(#brothShadow)">
+    <ellipse cx="320" cy="220" rx="240" ry="120" fill="url(#broth)" stroke="#e6bd85"/>
+    <g fill="#e6b07a" stroke="#c48a5a" stroke-width="1">
+      <ellipse cx="260" cy="200" rx="34" ry="20"/>
+      <ellipse cx="360" cy="200" rx="34" ry="20"/>
+    </g>
+    <g stroke="#c97b3a" stroke-width="4" fill="none">
+      <path d="M160 160 C200 140, 280 140, 360 160"/>
+    </g>
+    <text x="0" y="360" font-family="sans-serif" font-size="24" fill="#7F1D1D">Sup Wonton</text>
+  </g>
+</svg>

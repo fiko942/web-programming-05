@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="wallGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff8f4" />
+      <stop offset="1" stop-color="#ffe9d8" />
+    </linearGradient>
+
+    <radialGradient id="vignette" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="rgba(0,0,0,0)" />
+      <stop offset="1" stop-color="rgba(0,0,0,0.25)" />
+    </radialGradient>
+
+    <linearGradient id="wood" x1="0" x2="1">
+      <stop offset="0" stop-color="#f3daba" />
+      <stop offset="1" stop-color="#d6a26a" />
+    </linearGradient>
+
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity="0.25" />
+    </filter>
+
+    <!-- subtle wood grain pattern -->
+    <pattern id="grain" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 2 Q4 0 8 2" stroke="#e3b98a" stroke-width="0.6" fill="none" />
+    </pattern>
+  </defs>
+
+  <!-- wall -->
+  <rect width="100%" height="520" fill="url(#wallGrad)" />
+
+  <!-- decorative soft motif -->
+  <g opacity="0.06" fill="#f59e0b">
+    <circle cx="160" cy="110" r="92" />
+    <circle cx="520" cy="90" r="72" />
+    <circle cx="1200" cy="140" r="96" />
+  </g>
+
+  <!-- hanging lanterns -->
+  <g filter="url(#softShadow)">
+    <g transform="translate(220,100)">
+      <ellipse cx="0" cy="0" rx="44" ry="56" fill="#b91c1c" />
+      <ellipse cx="0" cy="-6" rx="30" ry="18" fill="#ffcf9a" opacity="0.15" />
+      <rect x="-4" y="54" width="8" height="22" rx="3" fill="#7f1d1d" />
+    </g>
+    <g transform="translate(520,100)">
+      <ellipse cx="0" cy="0" rx="44" ry="56" fill="#b91c1c" />
+      <ellipse cx="0" cy="-6" rx="30" ry="18" fill="#ffcf9a" opacity="0.15" />
+      <rect x="-4" y="54" width="8" height="22" rx="3" fill="#7f1d1d" />
+    </g>
+    <g transform="translate(920,100)">
+      <ellipse cx="0" cy="0" rx="44" ry="56" fill="#b91c1c" />
+      <ellipse cx="0" cy="-6" rx="30" ry="18" fill="#ffcf9a" opacity="0.15" />
+      <rect x="-4" y="54" width="8" height="22" rx="3" fill="#7f1d1d" />
+    </g>
+  </g>
+
+  <!-- table with wood texture -->
+  <g transform="translate(160,360)">
+    <rect x="0" y="0" width="1280" height="220" rx="20" fill="url(#wood)" stroke="#b87a3a" />
+    <rect x="0" y="0" width="1280" height="220" rx="20" fill="url(#grain)" opacity="0.18" />
+    <!-- plates on table -->
+    <g transform="translate(260,46)" fill="#fff" stroke="#e6d6c7" stroke-width="3" >
+      <circle cx="60" cy="40" r="46"/>
+      <circle cx="200" cy="40" r="46"/>
+      <circle cx="360" cy="44" r="46"/>
+    </g>
+  </g>
+
+  <!-- floor subtle -->
+  <rect x="0" y="580" width="1600" height="320" fill="#fffaf8" />
+
+  <!-- vignette -->
+  <rect width="1600" height="900" fill="url(#vignette)" />
+
+</svg>
